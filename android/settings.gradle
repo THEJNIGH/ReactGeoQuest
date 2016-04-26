@@ -1,0 +1,3 @@
+rootProject.name = 'ReactGeoQuest'
+
+include ':app'

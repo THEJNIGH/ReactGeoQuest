@@ -60,5 +60,25 @@ module.exports = StyleSheet.create({
     flex: 1,
     resizeMode: 'contain',
     backgroundColor: 'transparent',
-  }
+  },
+  mapContainer: {
+    flex: 8,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  bottomContainer: {
+    flex: 1,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+    backgroundColor: '#4CA559',
+    paddingLeft: 15,
+    paddingRight: 15
+  },
+  bottomButtons: {
+    width: 50,
+    height: 50,
+
+  },
+
 });

@@ -34,9 +34,41 @@ class Login extends Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text>
-          Something
-        </Text>
+        <Image style={styles.image} source={require('../images/homepagebg.jpg')}>
+          <Logo
+            Logo='Signup'
+          />
+          <View style={styles.formContainer}>
+            <View style={styles.inputWrapper}>
+              <TextInput
+                  style={styles.textinput}
+                  onChangeText={(text) => this.setState({email: text})}
+                  value={this.state.email}
+                  placeholder={"Email Address"}
+                  placeholderTextColor={'#2D2D2D'}
+              />
+              <TextInput
+                style={styles.textinput}
+                onChangeText={(text) => this.setState({password: text})}
+                value={this.state.password}
+                secureTextEntry={true}
+                placeholder={"Password"}
+                placeholderTextColor={'#2D2D2D'}
+              />
+            </View>
+            <Button
+              text="Signup"
+              onpress={this.signup.bind(this)}
+              button_styles={styles.primary_button}
+              button_text_styles={styles.primary_button_text} />
+
+            <Button
+              text="Have an Account?"
+              onpress={this.goToLogin.bind(this)}
+              button_styles={styles.transparent_button}
+              button_text_styles={styles.transparent_button_text} />
+          </View>
+        </Image>
       </View>
     );
   }

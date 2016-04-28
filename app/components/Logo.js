@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   },
   logo: {
     fontSize: 40,
-    fontFamily: 'LastKingQuest',
+    fontFamily: 'Helvetica',
     color: '#FFFEF7',
   }
 });

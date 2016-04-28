@@ -34,7 +34,7 @@ class ReactGeoQuest extends Component {
 
     AsyncStorage.getItem('user_data').then((user_data_json) => {
       let user_data = JSON.parse(user_data_json);
-      let component = {component: Signup};
+      let component = {component: Login};
       if(user_data != null){
         app.authWithCustomToken(user_data.token, (error, authData) => {
           if(error){
